@@ -1,0 +1,158 @@
+/* ! Global Start */
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: rgba(0,0,0,0.9);
+    --second-color: rgb(230,95,120); 
+}
+body{
+    font-family: "Nunito Sans", sans-serif;
+
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: "Montserrat", sans-serif;
+}
+.sub-titel{
+    max-width: 500px;
+    margin: auto;
+}
+/* !END GLOBAL */
+/* ? START NAVBAR */
+nav{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav-link{
+    transition: all 0.5s;
+    color: var(--main-color);
+}
+.navbar-nav .nav-link.active{
+    color: var(--second-color);
+}
+.nav-link:hover{
+    color: var(--second-color) !important;
+}
+/* ?END NAVBAR */
+/* ! Home Section */
+.home-header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(../images/header-bg.jpg) ;
+    background-position: center center;
+    background-size: cover;
+}
+.home-content .p-home{
+    color: rgba(255, 255, 255, 0.5)
+}
+.btn-cv{
+    padding: 1rem 3rem;
+    color: white;
+}
+.btn-cv:hover{
+color: black;
+background-color: white;
+}
+.home-header .scroll{
+    width: 40px;
+    height: 70px;
+    bottom:50px ;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.home-header .scroll::after{
+    content: "";
+    width: 2px;
+    height: 30%;
+    position: absolute;
+    bottom: 10px;
+    background-color: white;
+    left: 50%;
+    transform: translateX(-50%);
+   
+}
+/* !END HOME SECTION */
+/* ? START ABOUT SECTION */
+.img-thumbnail{
+    border-radius: 0 !important;
+}
+.about-caption .about-span{
+    color: var(--second-color);
+}
+.about-caption li{
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.about-caption li:hover{
+    color: var(--second-color);
+    border-color: var(--second-color) !important;
+}
+/* ? END ABOUT SECTION */
+/* ! START CLIENT SECTION */
+.clint-icon{
+    color: var(--second-color);
+}
+.carousel-indicators [data-bs-target]{
+    background-color: var(--second-color);
+}
+/* ! END CLIENT SECTION */
+/* ? START WORKS */
+.nav-pills .nav-link.active{
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 20px;
+}
+.my-bg{
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+}
+.layer-work{
+    transition: all 1s;
+}
+.inner:hover .layer-work{
+opacity: 1;
+
+}
+.inner:hover img{
+    transform: scale(1.5);
+}
+.inner img{
+    transition: all 1s;
+}
+.work-content{
+    margin-top: 5.625rem;
+transition: all 1s;
+}
+.inner{
+.work-content{
+        margin-top: 0px;
+    }
+}
+/* ? END WORKS */
+/* ? START BLOG */
+.blog-span{
+    color: var(--second-color);
+}
+/* ? END BLOG */
+/* ? START CONTACT */
+#Contact input {
+    border: solid 1px var(--main-color);
+}
+#Contact input:focus ,
+#Contact textarea:focus{    border: solid 3px var(--second-color);
+    outline: 0;
+}
+#Contact textarea{
+    resize: vertical;
+    height: 80px;
+    max-height: 150px;
+}
+.contact-span{
+color: var(--second-color);
+}
+/* ? END CONTACT */
